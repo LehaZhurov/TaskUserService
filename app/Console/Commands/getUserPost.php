@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Ensi\EBSPostClient\Api\PostsApi;
 use Ensi\EBSPostClient\Dto\SearchPostsRequest;
+
 class GetUserPost extends Command
 {
     /**
@@ -28,10 +29,15 @@ class GetUserPost extends Command
      */
     public function handle(PostsApi $api)
     {
-        $filter = ['filter' => ['user_id'=>$this->argument('userId')]];
+        $userId = $this->argument('userId');
+        $filter = ['filter' => ['user_id' => $userId]];
         $request = new SearchPostsRequest($filter);
-        $post = json_decode($api->searchPosts($request));
-        $total = $post->meta->pagination->total;
-        $this->info($total);
+        $respons = $api->searchPosts($request)->getData();
+        if (isset($respons)) {
+            $total = count($respons);
+            $this->info("У пользователя с id = " . $userId . " кол-во постов:" . $total);
+        } else {
+            $this->info('Ошибка получения ответа от клиента Post');
+        }
     }
 }

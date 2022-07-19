@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b12ee48b02112071011858f52a7c175",
+    "content-hash": "b02d139dbe7ad596006d7b58a766eecd",
     "packages": [
         {
             "name": "ackintosh/ganesha",
@@ -1342,12 +1342,12 @@
             "time": "2021-10-05T20:22:20+00:00"
         },
         {
-            "name": "ensi/postservices",
-            "version": "dev-main",
+            "name": "ensi/postserviceclient",
+            "version": "dev-task-90431-update-client",
             "dist": {
                 "type": "path",
                 "url": "clients/post-client-php",
-                "reference": "db0da50d381cb9ae82297ff29fb7555f1c14b702"
+                "reference": "6316a6b558c23d9db6ab08f2fe49fa7534f13145"
             },
             "require": {
                 "ext-curl": "*",
@@ -1365,12 +1365,12 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Ensi\\EBSPost\\": "lib/"
+                    "Ensi\\EBSPostClient\\": "lib/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Ensi\\EBSPost\\Test\\": "test/"
+                    "Ensi\\EBSPostClient\\Test\\": "test/"
                 }
             },
             "license": [
@@ -2518,16 +2518,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "34a68067b7ae3b836ea5e57e1fc432478372a4f5"
+                "reference": "1a941703dfb649f9b821e7bc425e782f576a805e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/34a68067b7ae3b836ea5e57e1fc432478372a4f5",
-                "reference": "34a68067b7ae3b836ea5e57e1fc432478372a4f5",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/1a941703dfb649f9b821e7bc425e782f576a805e",
+                "reference": "1a941703dfb649f9b821e7bc425e782f576a805e",
                 "shasum": ""
             },
             "require": {
@@ -2588,7 +2588,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.1.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.1.1"
             },
             "funding": [
                 {
@@ -2604,7 +2604,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-29T17:29:54+00:00"
+            "time": "2022-07-18T09:59:40+00:00"
         },
         {
             "name": "league/mime-type-detection",
