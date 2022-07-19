@@ -3,9 +3,9 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Ensi\EBSPost\Api\PostsApi;
-use Ensi\EBSPost\Dto\SearchPostsRequest;
-class getUserPost extends Command
+use Ensi\EBSPostClient\Api\PostsApi;
+use Ensi\EBSPostClient\Dto\SearchPostsRequest;
+class GetUserPost extends Command
 {
     /**
      * The name and signature of the console command.
