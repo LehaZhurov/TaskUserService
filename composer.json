@@ -21,7 +21,7 @@
         "laravel/octane": "^1.2",
         "laravel/tinker": "^2.7",
         "spatie/laravel-query-builder": "^5.0",
-        "ensi/postservices": "*"
+        "ensi/postserviceclient": "*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.8",
