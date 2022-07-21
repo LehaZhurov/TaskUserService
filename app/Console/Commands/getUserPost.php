@@ -3,8 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Ensi\EBSPostClient\Api\PostsApi;
-use Ensi\EBSPostClient\Dto\SearchPostsRequest;
+use App\Domain\User\Action\GetCountPostUserAction;
 
 class GetUserPost extends Command
 {
@@ -27,17 +26,10 @@ class GetUserPost extends Command
      *
      * @return int
      */
-    public function handle(PostsApi $api)
+    public function handle(GetCountPostUserAction $action)
     {
         $userId = $this->argument('userId');
-        $filter = ['filter' => ['user_id' => $userId]];
-        $request = new SearchPostsRequest($filter);
-        $respons = $api->searchPosts($request)->getData();
-        if (isset($respons)) {
-            $total = count($respons);
-            $this->info("У пользователя с id = " . $userId . " кол-во постов:" . $total);
-        } else {
-            $this->info('Ошибка получения ответа от клиента Post');
-        }
+        $total = $action->execute($userId);
+        $this->info("У пользователя с id = " . $userId . " кол-во постов:" . $total);
     }
 }
