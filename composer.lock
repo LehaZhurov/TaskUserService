@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b02d139dbe7ad596006d7b58a766eecd",
+    "content-hash": "254039123b525e7cc1e4391820d63613",
     "packages": [
         {
             "name": "ackintosh/ganesha",
@@ -1340,62 +1340,6 @@
                 "source": "https://github.com/ensi-platform/laravel-stdout-logs-helper/tree/0.2.0"
             },
             "time": "2021-10-05T20:22:20+00:00"
-        },
-        {
-            "name": "ensi/postserviceclient",
-            "version": "dev-task-90431-update-client",
-            "dist": {
-                "type": "path",
-                "url": "clients/post-client-php",
-                "reference": "6316a6b558c23d9db6ab08f2fe49fa7534f13145"
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "guzzlehttp/guzzle": "^6.2 || ^7.0",
-                "guzzlehttp/psr7": "^1.6.1",
-                "php": "^7.1 || ^8.0",
-                "symfony/http-foundation": "^5.0 || ^6.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.12",
-                "phpunit/phpunit": "^7.4 || ^8.0 || ^9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ensi\\EBSPostClient\\": "lib/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Ensi\\EBSPostClient\\Test\\": "test/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "OpenAPI-Generator contributors",
-                    "homepage": "https://openapi-generator.tech"
-                }
-            ],
-            "description": "APi Post",
-            "homepage": "https://openapi-generator.tech",
-            "keywords": [
-                "api",
-                "openapi",
-                "openapi-generator",
-                "openapitools",
-                "php",
-                "rest",
-                "sdk"
-            ],
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "fruitcake/php-cors",
@@ -3141,6 +3085,62 @@
                 }
             ],
             "time": "2021-12-04T23:24:31+00:00"
+        },
+        {
+            "name": "postsevice/client",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "C:/WorkDir/Packages/postsevice/client",
+                "reference": "cbf300bdd8ccfd88ac741a2c81825ec1d42c17ea"
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^6.2 || ^7.0",
+                "guzzlehttp/psr7": "^1.6.1",
+                "php": "^7.1 || ^8.0",
+                "symfony/http-foundation": "^5.0 || ^6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12",
+                "phpunit/phpunit": "^7.4 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ensi\\EBSPostClient\\": "lib/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Ensi\\EBSPostClient\\Test\\": "test/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "OpenAPI-Generator contributors",
+                    "homepage": "https://openapi-generator.tech"
+                }
+            ],
+            "description": "APi Post",
+            "homepage": "https://openapi-generator.tech",
+            "keywords": [
+                "api",
+                "openapi",
+                "openapi-generator",
+                "openapitools",
+                "php",
+                "rest",
+                "sdk"
+            ],
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "psr/cache",
