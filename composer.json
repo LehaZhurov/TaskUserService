@@ -21,7 +21,7 @@
         "laravel/octane": "^1.2",
         "laravel/tinker": "^2.7",
         "spatie/laravel-query-builder": "^5.0",
-        "ensi/postservices": "*"
+        "postsevice/client": "1.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.8",
@@ -68,10 +68,6 @@
         {
             "type": "vcs",
             "url": "https://gitlab.com/greensight/ensi/packages/openapi-server-generator-templates.git"
-        },
-        {
-            "type": "path",
-            "url": "clients/post-client-php"
         }
     ],
     "scripts": {
